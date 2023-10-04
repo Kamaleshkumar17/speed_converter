@@ -1,0 +1,77 @@
+body {
+  background-image: url('calc1.jpg');
+  font-family: Arial, sans-serif;
+  background-color: #f4bae9;
+  font-size: 16px;
+}
+/* Style the scrolling message */
+.scrolling-message {
+  background-color: #007BFF; /* Background color */
+  color: white; /* Text color */
+  padding: 10px; /* Padding around the message */
+  position: fixed; /* Fixed position at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  overflow: hidden; /* Hide any overflow */
+  white-space: nowrap; /* Prevent text from wrapping */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: scrollMessage 20s linear infinite; /* Animation properties */
+}
+.greeting-symbol{
+  font-size: 20px;
+  margin:0 5px;
+}
+/* Keyframes for the scrolling animation */
+@keyframes scrollMessage {
+  0% {
+      transform: translateX(100%); /* Start off-screen to the right */
+  }
+  100% {
+      transform: translateX(-100%); /* Scroll to the left */
+  }
+}
+.container {
+  text-align: center;
+  margin-top: 50px;
+  background-color: #d1e9ec;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  font-size: 24px;
+  color: #c74040;
+  font-size: 24px;
+  font-weight: bold;
+}
+.converter {
+  background-image: url('calc.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  margin-top: 50px;
+}
+.input-container,
+.unit-container {
+  display: inline-block;
+  color:#170101;
+  margin-right: 10px;
+  margin-top: 10px;
+  background-color: #89818692;
+  border: 1px solid #393737;
+  border-radius: 5px;
+  padding: 5px;
+}
+select, input {
+  padding: 5px;
+}
+.result {
+  margin-top: 70px;
+  font-weight: bold;
+}

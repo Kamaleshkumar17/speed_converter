@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Speed Converter</title>
+</head>
+<body>
+    <div class="scrolling-message">
+        <span class="greeting-symbol">🚀</span> Welcome! Let's make speedy calculations here. Transform your speed effortlessly and with style. It's time to zoom through conversions!<span class="greeting-symbol">🚀</span>
+        </div>
+    <div class="container">
+        <h1>Speed Converter</h1>
+        <div class="converter">
+            <div class="input-container">
+                <input type="number" id="speedInput" placeholder="Enter speed">
+            </div>
+            <div class="unit-container">
+                <select id="fromUnit">
+                    <option value="km/hr">Kilometers per Hour(km/h)</option>
+                    <option value="km/min">Kilometers per Minute (km/min)</option>
+                    <option value="km/s">Kilometers per Second (km/s)</option>
+                    <option value="cm/min">Centimeters per Minute (cm/min)</option>
+                    <option value="cm/s">Centimeters per Second (cm/s)</option>
+                    <option value="ft/hr">Feet per Hour (ft/hr)</option>
+                    <option value="ft/min">Feet per Minute (ft/min)</option>
+                    <option value="ft/s">Feet per Second(f/s)</option>
+                    <option value="in/hr">Inches per Hour (in/hr)</option>
+                    <option value="in/min">Inches per Minute (in/min)</option>
+                    <option value="in/s">Inches per Second (in/s)</option>
+                    <option value="m/hr">Meters per Hour (m/hr)</option>
+                    <option value="m/min">Meters per Minute (m/min)</option>
+                    <option value="m/s">Metres per Second(m/s)</option>
+                    <option value="mi/hr">Miles per Hour (mi/hr)</option>
+                    <option value="mi/min">Miles per Minute (mi/min)</option>
+                    <option value="mi/s">Miles per Second (mi/s)</option>
+                    <option value="yd/hr">Yards per Hour (yd/hr)</option>
+                    <option value="yd/min">Yards per Minute (yd/min)</option>
+                    <option value="yd/s">Yards per Second (yd/s)</option>
+                    <!-- Add more units here -->
+                </select>
+                <span>to</span>
+                <select id="toUnit">
+                    <option value="km/hr">Kilometers per Hour(km/h)</option>
+                    <option value="km/min">Kilometers per Minute (km/min)</option>
+                    <option value="km/s">Kilometers per Second (km/s)</option>
+                    <option value="cm/min">Centimeters per Minute (cm/min)</option>
+                    <option value="cm/s">Centimeters per Second (cm/s)</option>
+                    <option value="ft/hr">Feet per Hour (ft/hr)</option>
+                    <option value="ft/min">Feet per Minute (ft/min)</option>
+                    <option value="ft/s">Feet per Second(f/s)</option>
+                    <option value="in/hr">Inches per Hour (in/hr)</option>
+                    <option value="in/min">Inches per Minute (in/min)</option>
+                    <option value="in/s">Inches per Second (in/s)</option>
+                    <option value="m/hr">Meters per Hour (m/hr)</option>
+                    <option value="m/min">Meters per Minute (m/min)</option>
+                    <option value="m/s">Metres per Second(m/s)</option>
+                    <option value="mi/hr">Miles per Hour (mi/hr)</option>
+                    <option value="mi/min">Miles per Minute (mi/min)</option>
+                    <option value="mi/s">Miles per Second (mi/s)</option>
+                    <option value="yd/hr">Yards per Hour (yd/hr)</option>
+                    <option value="yd/min">Yards per Minute (yd/min)</option>
+                    <option value="yd/s">Yards per Second (yd/s)</option>
+                    <!-- Add more units here -->
+                </select>
+            </div>
+        </div>
+        <div class="result">
+            <p id="convertedResult">Converted speed will be displayed here.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
